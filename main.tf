@@ -9,6 +9,7 @@ resource "azurerm_network_interface" "network_interface" {
     name                          = each.value.name
     subnet_id                     = data.azurerm_subnet.subnet[each.key].id
     private_ip_address_allocation = "Dynamic"
+    public_ip_address_id = data.azurerm_public_ip.public_ip[each.key].id
   }
 }
 
