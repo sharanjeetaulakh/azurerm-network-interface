@@ -1,5 +1,3 @@
-variable "nics" {}
+variable"nics"{}
+variable "vms-win" {}
 variable "pips" {}
-variable "vms-win" {
-  type = any
-}
