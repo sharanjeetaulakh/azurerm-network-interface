@@ -1,3 +1,3 @@
 variable"nics"{}
-# variable "vms-win" {}
-variable "pips" {}
+ variable "vms-win" {}
+# variable "pips" {}
