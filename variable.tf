@@ -1,3 +1,8 @@
-variable"nics"{}
- variable "vms-win" {}
-# variable "pips" {}
+variable "nics" {
+  type = any
+}
+
+variable "vms-win" {
+  type    = any
+  default = {}
+}
