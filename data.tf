@@ -14,10 +14,3 @@ data "azurerm_public_ip" "public_ip" {
 
 }
 
-  data "azurerm_platform_image" "windows" {
-    for_each= var.vms-win
-  location  = each.value.location
-  publisher =  each.value.publisher
-  offer     = each.value. offer   
-  sku       =  each.value.sku  
-}
